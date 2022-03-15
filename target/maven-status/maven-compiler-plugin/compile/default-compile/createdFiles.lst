@@ -1,0 +1,3 @@
+br/com/unipac/GerEstacionamento/infra/H2Infra.class
+br/com/unipac/GerEstacionamento/model/dao/PessoaDAO.class
+br/com/unipac/GerEstacionamento/model/domain/Pessoa.class
