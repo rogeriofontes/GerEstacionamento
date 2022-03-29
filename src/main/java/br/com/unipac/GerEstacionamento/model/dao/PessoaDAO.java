@@ -23,7 +23,8 @@ public class PessoaDAO {
     }
 
     public void save(Pessoa pessoa) {
-        String sql1 = "INSERT INTO Pessoa (id, first, last, age) VALUES ('" + pessoa.getId() + "', '" + pessoa.getFirst() + "', '" + pessoa.getLast() + "', '" + pessoa.getAge() + "')";
+        String sql1 = "INSERT INTO Pessoa (id, first, last, age) VALUES " +
+                "('" + pessoa.getId() + "', '" + pessoa.getFirst() + "', '" + pessoa.getLast() + "', '" + pessoa.getAge() + "')";
         execute(sql1);
     }
 
@@ -67,10 +68,11 @@ public class PessoaDAO {
         pessoaDAO.create();
 
         Pessoa pessoa = new Pessoa();
-        pessoa.setId(2L);
-        pessoa.setFirst("Rogerio");
-        pessoa.setLast("Tomaz");
-        pessoaDAO.save(pessoa);
+        pessoa.setId(5L);
+        pessoa.setFirst("Elena");
+        pessoa.setLast("Santos");
+        //pessoaDAO.save(pessoa);
+        //System.out.println("Cadastro Realizado" + pessoa.toString());
 
         pessoaDAO.buscaPessoas();
     }

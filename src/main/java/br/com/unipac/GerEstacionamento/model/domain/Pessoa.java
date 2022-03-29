@@ -36,6 +36,17 @@ public class Pessoa {
 
     public void setAge(int age) {
         this.age = age;
+
     }
 
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "id=" + id +
+                ", first='" + first + '\'' +
+                ", last='" + last + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
